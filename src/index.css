@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Nunito', sans-serif;
+    @apply text-[#e2e8f0] antialiased;
+    /* Deep fluid purple background (lighter) */
+    background-color: #281643;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(106, 59, 163, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 90% 80%, rgba(184, 233, 47, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(85, 46, 133, 0.6) 0%, transparent 70%);
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  #root {
+    @apply min-h-screen w-full flex flex-col;
+  }
+}
+
+@layer components {
+  /* Clean, accessible card style */
+  .card-duo {
+    background-color: #351f54;
+    border: 1px solid #6a3ba3;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    @apply transition-transform duration-200;
+  }
+  
+  /* Interactive inner card */
+  .inner-card-duo {
+    background-color: #281643;
+    border: 1px solid #552e85;
+    border-radius: 14px;
+    @apply transition-all duration-200;
+  }
+  
+  .inner-card-duo:hover {
+    border-color: #6322a3;
+  }
+
+  /* Lime Green Button */
+  .btn-duo-green {
+    background-color: #b8e92f;
+    color: #281643;
+    font-weight: 800;
+    border-radius: 14px;
+    box-shadow: 0 4px 0 #7fa618;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    top: 0;
+  }
+  
+  .btn-duo-green:hover {
+    background-color: #cbfc47;
+  }
+  
+  .btn-duo-green:active {
+    top: 4px;
+    box-shadow: 0 0 0 #7fa618;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #6a3ba3;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6322a3;
+}
