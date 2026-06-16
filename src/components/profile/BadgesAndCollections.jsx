@@ -1,5 +1,13 @@
 import React from 'react';
-import { Lock, Crown, Flame, BookOpen, PiggyBank, Sun, Moon, Users, Target } from 'lucide-react';
+import { 
+  Lock, Crown, Flame, BookOpen, PiggyBank, Sun, Moon, Users, Target,
+  Zap, Activity, Star, Trophy, Medal, Rocket, Shield, Heart,
+  Book, Library, GraduationCap, Scroll, Lightbulb, Glasses, Microscope, PenTool, Award,
+  Coins, Banknote, Wallet, CreditCard, Vault, Safe, Landmark, Gem, Diamond,
+  Sunrise, Sunset, CloudSun, CloudMoon, CalendarDays, CalendarCheck, Clock, Hourglass,
+  User, UserPlus, UserCheck, MessageCircle, Share2, Globe, Radio, Megaphone, Smartphone,
+  Crosshair, CheckCircle, CheckSquare, Brain, Puzzle, Swords, Flag, Compass, Map
+} from 'lucide-react';
 
 const badgeCategories = [
   {
@@ -7,16 +15,16 @@ const badgeCategories = [
     icon: Flame,
     color: '#EF4444',
     badges: [
-      { id: 'st1', label: '3-Day Streak', locked: true },
-      { id: 'st2', label: '7-Day Streak', locked: true },
-      { id: 'st3', label: '14-Day Streak', locked: true },
-      { id: 'st4', label: '30-Day Streak', locked: true },
-      { id: 'st5', label: '50-Day Streak', locked: true },
-      { id: 'st6', label: '75-Day Streak', locked: true },
-      { id: 'st7', label: '100-Day Streak', locked: true },
-      { id: 'st8', label: '150-Day Streak', locked: true },
-      { id: 'st9', label: '200-Day Streak', locked: true },
-      { id: 'st10', label: '365-Day Streak', locked: true },
+      { id: 'st1', label: '3-Day Streak', locked: true, specificIcon: Flame },
+      { id: 'st2', label: '7-Day Streak', locked: true, specificIcon: Zap },
+      { id: 'st3', label: '14-Day Streak', locked: true, specificIcon: Activity },
+      { id: 'st4', label: '30-Day Streak', locked: true, specificIcon: Star },
+      { id: 'st5', label: '50-Day Streak', locked: true, specificIcon: Crown },
+      { id: 'st6', label: '75-Day Streak', locked: true, specificIcon: Trophy },
+      { id: 'st7', label: '100-Day Streak', locked: true, specificIcon: Medal },
+      { id: 'st8', label: '150-Day Streak', locked: true, specificIcon: Rocket },
+      { id: 'st9', label: '200-Day Streak', locked: true, specificIcon: Shield },
+      { id: 'st10', label: '365-Day Streak', locked: true, specificIcon: Heart },
     ]
   },
   {
@@ -24,16 +32,16 @@ const badgeCategories = [
     icon: BookOpen,
     color: '#3B82F6',
     badges: [
-      { id: 'l1', label: 'First Lesson', locked: true },
-      { id: 'l2', label: 'Module Master', locked: true },
-      { id: 'l3', label: 'Curriculum Finisher', locked: true },
-      { id: 'l4', label: 'Knowledge Seeker', locked: true },
-      { id: 'l5', label: 'Avid Reader', locked: true },
-      { id: 'l6', label: 'Concept Crusher', locked: true },
-      { id: 'l7', label: 'Theory Expert', locked: true },
-      { id: 'l8', label: 'Practical Pro', locked: true },
-      { id: 'l9', label: 'Finance Guru', locked: true },
-      { id: 'l10', label: 'PiggyPath Scholar', locked: true },
+      { id: 'l1', label: 'First Lesson', locked: true, specificIcon: BookOpen },
+      { id: 'l2', label: 'Module Master', locked: true, specificIcon: Book },
+      { id: 'l3', label: 'Curriculum Finisher', locked: true, specificIcon: Library },
+      { id: 'l4', label: 'Knowledge Seeker', locked: true, specificIcon: GraduationCap },
+      { id: 'l5', label: 'Avid Reader', locked: true, specificIcon: Scroll },
+      { id: 'l6', label: 'Concept Crusher', locked: true, specificIcon: Lightbulb },
+      { id: 'l7', label: 'Theory Expert', locked: true, specificIcon: Glasses },
+      { id: 'l8', label: 'Practical Pro', locked: true, specificIcon: Microscope },
+      { id: 'l9', label: 'Finance Guru', locked: true, specificIcon: PenTool },
+      { id: 'l10', label: 'PiggyPath Scholar', locked: true, specificIcon: Award },
     ]
   },
   {
@@ -41,16 +49,16 @@ const badgeCategories = [
     icon: PiggyBank,
     color: '#00E599',
     badges: [
-      { id: 'sa1', label: 'First ₹500', locked: true },
-      { id: 'sa2', label: 'Saver Pro (₹5K)', locked: true },
-      { id: 'sa3', label: 'Growing (₹10K)', locked: true },
-      { id: 'sa4', label: 'Nest Egg (₹20K)', locked: true },
-      { id: 'sa5', label: 'Safety Net (₹30K)', locked: true },
-      { id: 'sa6', label: 'Big Goals (₹50K)', locked: true },
-      { id: 'sa7', label: 'Wealth Builder (₹100K)', locked: true },
-      { id: 'sa8', label: 'Half Mil (₹500K)', locked: true },
-      { id: 'sa9', label: 'Millionaire (₹1M)', locked: true },
-      { id: 'sa10', label: 'Financial Freedom', locked: true },
+      { id: 'sa1', label: 'First ₹500', locked: true, specificIcon: PiggyBank },
+      { id: 'sa2', label: 'Saver Pro (₹5K)', locked: true, specificIcon: Coins },
+      { id: 'sa3', label: 'Growing (₹10K)', locked: true, specificIcon: Banknote },
+      { id: 'sa4', label: 'Nest Egg (₹20K)', locked: true, specificIcon: Wallet },
+      { id: 'sa5', label: 'Safety Net (₹30K)', locked: true, specificIcon: CreditCard },
+      { id: 'sa6', label: 'Big Goals (₹50K)', locked: true, specificIcon: Vault },
+      { id: 'sa7', label: 'Wealth Builder (₹100K)', locked: true, specificIcon: Safe },
+      { id: 'sa8', label: 'Half Mil (₹500K)', locked: true, specificIcon: Landmark },
+      { id: 'sa9', label: 'Millionaire (₹1M)', locked: true, specificIcon: Gem },
+      { id: 'sa10', label: 'Financial Freedom', locked: true, specificIcon: Diamond },
     ]
   },
   {
@@ -60,14 +68,14 @@ const badgeCategories = [
     badges: [
       { id: 'c1', label: 'Early Bird', locked: true, specificIcon: Sun },
       { id: 'c2', label: 'Night Owl', locked: true, specificIcon: Moon },
-      { id: 'c3', label: 'Weekend Warrior', locked: true },
-      { id: 'c4', label: 'Daily Grind', locked: true },
-      { id: 'c5', label: 'Non-Stop', locked: true },
-      { id: 'c6', label: 'Dedicated', locked: true },
-      { id: 'c7', label: 'Relentless', locked: true },
-      { id: 'c8', label: 'Routine Master', locked: true },
-      { id: 'c9', label: 'Habit Former', locked: true },
-      { id: 'c10', label: 'Unbreakable', locked: true },
+      { id: 'c3', label: 'Weekend Warrior', locked: true, specificIcon: Sunrise },
+      { id: 'c4', label: 'Daily Grind', locked: true, specificIcon: Sunset },
+      { id: 'c5', label: 'Non-Stop', locked: true, specificIcon: CloudSun },
+      { id: 'c6', label: 'Dedicated', locked: true, specificIcon: CloudMoon },
+      { id: 'c7', label: 'Relentless', locked: true, specificIcon: CalendarDays },
+      { id: 'c8', label: 'Routine Master', locked: true, specificIcon: CalendarCheck },
+      { id: 'c9', label: 'Habit Former', locked: true, specificIcon: Clock },
+      { id: 'c10', label: 'Unbreakable', locked: true, specificIcon: Hourglass },
     ]
   },
   {
@@ -75,16 +83,16 @@ const badgeCategories = [
     icon: Users,
     color: '#8B5CF6',
     badges: [
-      { id: 'so1', label: 'First Friend', locked: true },
-      { id: 'so2', label: 'Friendly (3)', locked: true },
-      { id: 'so3', label: 'Social (5)', locked: true },
-      { id: 'so4', label: 'Butterfly (10)', locked: true },
-      { id: 'so5', label: 'Connector (20)', locked: true },
-      { id: 'so6', label: 'Networker (50)', locked: true },
-      { id: 'so7', label: 'Influencer (100)', locked: true },
-      { id: 'so8', label: 'Trendsetter', locked: true },
-      { id: 'so9', label: 'Community Lead', locked: true },
-      { id: 'so10', label: 'PiggyPath Mayor', locked: true },
+      { id: 'so1', label: 'First Friend', locked: true, specificIcon: User },
+      { id: 'so2', label: 'Friendly (3)', locked: true, specificIcon: Users },
+      { id: 'so3', label: 'Social (5)', locked: true, specificIcon: UserPlus },
+      { id: 'so4', label: 'Butterfly (10)', locked: true, specificIcon: UserCheck },
+      { id: 'so5', label: 'Connector (20)', locked: true, specificIcon: MessageCircle },
+      { id: 'so6', label: 'Networker (50)', locked: true, specificIcon: Share2 },
+      { id: 'so7', label: 'Influencer (100)', locked: true, specificIcon: Globe },
+      { id: 'so8', label: 'Trendsetter', locked: true, specificIcon: Radio },
+      { id: 'so9', label: 'Community Lead', locked: true, specificIcon: Megaphone },
+      { id: 'so10', label: 'PiggyPath Mayor', locked: true, specificIcon: Smartphone },
     ]
   },
   {
@@ -92,16 +100,16 @@ const badgeCategories = [
     icon: Target,
     color: '#F97316',
     badges: [
-      { id: 'q1', label: 'Perfect Score', locked: true },
-      { id: 'q2', label: 'Sharp Mind', locked: true },
-      { id: 'q3', label: 'Quiz Pro (5)', locked: true },
-      { id: 'q4', label: 'Quiz Master (10)', locked: true },
-      { id: 'q5', label: 'Trivia King (20)', locked: true },
-      { id: 'q6', label: 'Flawless (50)', locked: true },
-      { id: 'q7', label: 'Genius (100)', locked: true },
-      { id: 'q8', label: 'Speed Demon', locked: true },
-      { id: 'q9', label: 'Accuracy God', locked: true },
-      { id: 'q10', label: 'Unstoppable', locked: true },
+      { id: 'q1', label: 'Perfect Score', locked: true, specificIcon: Target },
+      { id: 'q2', label: 'Sharp Mind', locked: true, specificIcon: Crosshair },
+      { id: 'q3', label: 'Quiz Pro (5)', locked: true, specificIcon: CheckCircle },
+      { id: 'q4', label: 'Quiz Master (10)', locked: true, specificIcon: CheckSquare },
+      { id: 'q5', label: 'Trivia King (20)', locked: true, specificIcon: Brain },
+      { id: 'q6', label: 'Flawless (50)', locked: true, specificIcon: Puzzle },
+      { id: 'q7', label: 'Genius (100)', locked: true, specificIcon: Swords },
+      { id: 'q8', label: 'Speed Demon', locked: true, specificIcon: Flag },
+      { id: 'q9', label: 'Accuracy God', locked: true, specificIcon: Compass },
+      { id: 'q10', label: 'Unstoppable', locked: true, specificIcon: Map },
     ]
   }
 ];
@@ -138,15 +146,18 @@ const BadgesAndCollections = () => {
                       <div 
                         className={`
                           w-16 h-16 border-[3px] flex items-center justify-center mb-2 transition-colors relative
-                          ${badge.locked ? 'bg-[#F4F4F5] dark:bg-[#27272A] border-gray-300 dark:border-gray-600 shadow-none' : 'border-[#18181B] dark:border-white shadow-[2px_2px_0_#18181B] dark:shadow-[2px_2px_0_#F4F4F5]'}
+                          ${badge.locked ? 'border-gray-300 dark:border-gray-600 shadow-none' : 'border-[#18181B] dark:border-white shadow-[2px_2px_0_#18181B] dark:shadow-[2px_2px_0_#F4F4F5]'}
                         `}
-                        style={{ backgroundColor: badge.locked ? undefined : category.color }}
+                        style={{ 
+                          backgroundColor: badge.locked ? `${category.color}20` : category.color // 20 hex adds transparency to the category color
+                        }}
                       >
                         {/* Illustration */}
                         <Icon 
                           size={28} 
-                          color={badge.locked ? "#A1A1AA" : "#18181B"} 
+                          color={badge.locked ? category.color : "#18181B"} 
                           strokeWidth={badge.locked ? 2 : 2.5} 
+                          style={{ opacity: badge.locked ? 0.7 : 1 }}
                         />
 
                         {/* Lock Overlay */}
