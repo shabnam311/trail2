@@ -38,7 +38,8 @@ const ConversionSection = () => {
   ];
 
   return (
-    <div className="w-full bg-[#F4F4F5] dark:bg-[#18181B] text-[#18181B] dark:text-[#F4F4F5]">
+    <>
+      <div className="w-full bg-[#F4F4F5] dark:bg-[#18181B] text-[#18181B] dark:text-[#F4F4F5]">
       
       {/* 11. WHO IS IT FOR? */}
       <section className="py-24 max-w-7xl mx-auto px-6 border-b-[3px] border-[#18181B]">
@@ -260,7 +261,7 @@ const ConversionSection = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 
