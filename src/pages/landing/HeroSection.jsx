@@ -111,7 +111,7 @@ const HeroSection = () => {
               </div>
               <div>
                 <div className="text-xs font-bold text-[#71717A] tracking-wider uppercase">Today's Quest</div>
-                <div className="text-xl font-black text-[#18181B] dark:text-[#F4F4F5] leading-tight">Master Compound<br/>Interest</div>
+                <div className="text-xl font-black text-[#18181B] dark:text-[#F4F4F5] leading-tight">Master<br/>Accounting</div>
               </div>
             </div>
             
