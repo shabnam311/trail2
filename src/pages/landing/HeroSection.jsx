@@ -199,7 +199,7 @@ const HeroSection = () => {
           >
             <div>
               <div className="font-black text-sm">Continue Lesson</div>
-              <div className="font-bold text-xs text-[#71717A]">Compound interest • 3 min left</div>
+              <div className="font-bold text-xs text-[#71717A]">Accounting • 3 min left</div>
             </div>
             <div className="w-10 h-10 bg-[#00E599] border-2 border-[#18181B] dark:border-white rounded-lg shadow-[#18181B] dark:shadow-[#FFFFFF] flex items-center justify-center cursor-pointer hover:bg-white dark:bg-[#27272A] transition-colors">
               <svg viewBox="0 0 24 24" fill="none" stroke="#18181B" strokeWidth={3} width={18} height={18}>
