@@ -42,7 +42,7 @@ const HeroSection = () => {
       {/* Background dot pattern */}
       <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#18181B 2px, transparent 2px)', backgroundSize: '24px 24px' }} />
       
-      <div className="max-w-7xl mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-20 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-start items-center">
+      <div className="max-w-7xl mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-20 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 lg:items-center items-center">
         
         {/* Decorative Abstract Star Illustration */}
         <motion.svg 
@@ -58,12 +58,12 @@ const HeroSection = () => {
 
 
         {/* Left Content */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 lg:col-span-5">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border-[3px] border-[#18181B] dark:border-white bg-white dark:bg-[#27272A] w-max font-bold text-sm tracking-wide shadow-[#18181B] dark:shadow-[#FFFFFF]">
             <span className="text-[#8B5CF6]">✦</span> PRE-LAUNCH <span className="mx-1">•</span> NOW BOARDING
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-[76px] font-black leading-[1.1] tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-[60px] xl:text-[64px] font-black leading-[1.1] tracking-tight">
             Gamify <span className="text-[#00E599] whitespace-nowrap">your way to </span> <br /> financial freedom.
           </h1>
 
@@ -88,12 +88,12 @@ const HeroSection = () => {
         </div>
 
         {/* Right Visual: Dashboard Mockup */}
-        <div className="w-full lg:scale-[1.15] lg:origin-top-left xl:scale-[1.25] z-10">
+        <div className="w-full lg:col-span-7 z-10">
           <motion.div 
             initial={{ opacity: 0, x: 100, rotate: 5 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ duration: 0.8, type: 'spring' }}
-            className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl bg-white dark:bg-[#27272A] border-[4px] border-[#18181B] dark:border-white shadow-[12px_12px_0_#18181B] dark:shadow-[#FFFFFF] p-6 md:p-8"
+            className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl bg-white dark:bg-[#27272A] border-[4px] border-[#18181B] dark:border-white shadow-[12px_12px_0_#18181B] dark:shadow-[#FFFFFF] p-6 md:p-8 lg:p-10"
           >
           {/* Header */}
           <div className="flex justify-between items-start mb-8">
